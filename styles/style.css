@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --cor-primaria: #070F2B;
+    --cor-secundaria: #9290C3;
+    --cor-tercearia: #535C91;
+    --cor-hover: #1B1A55;
+
+    --fonte-primaria: "Teko", serif;
+    --fonte-secundaria: "Roboto", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 25%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 100px;
+}
+
+.cabecalho__menu__links{
+    color: var(--cor-tercearia);
+    font-family: var(--fonte-primaria);
+    font-size: 1.87rem;
+    text-decoration: none;
+}
+
+.cabecalho__menu__links:hover{
+    color:bisque;
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria) ;
+    color: var(--cor-secundaria);
+}
+
+.apresentacao{
+    padding: 10% 15%;
+    display: flex; 
+    align-items: center;  
+    justify-content: space-between; 
+    gap: 82px;
+   
+}
+
+titulo-destaque{
+    color: var(--cor-tercearia)
+}
+
+.apresentacao__textos{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.apresentacao__textos__titulo{
+    font-size: 3.2rem;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-tercearia);
+}
+
+.apresentacao__textos__paragrafo{
+    font-size: 1.2rem;
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between; 
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__link{
+    border: 2px solid var(--cor-tercearia);
+    display: flex;
+    justify-content: center;
+    gap: 0.87rem;
+    width: 50%;
+    text-align: center;
+    border-radius: 0.62rem;
+    font-size: 1.45rem;
+    padding: 5% 5%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__link:hover{
+    background-color: var(--cor-hover);
+    width: 12.5rem;
+    cursor: pointer;
+}
+
+.apresentacao__imagem{
+    width: 45%;
+    border-radius: 100px;
+}
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-tercearia);
+    padding: 2.5rem;
+}
+
+.footer__texto {
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 4% 
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5% ;
+    }
+    
+    .apresentacao__links__link{
+        width: 80%;
+    }
+
+    .apresentacao__textos{
+        width: auto;
+    }
+    
+}
+
+.amigo-secreto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.amigo-secreto-paragrafo{
+    display: flex;
+    font-size: 20px;
+    padding: 2%;
+    text-align: center;
+    line-height: 150%;
+    font-family: var(--fonte-secundaria);
+}
+
+.amigo-secreto-img{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.barbearia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.barbearia-text-titulo{
+    font-size: 3.2rem;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-tercearia);
+    text-align: center;
+    margin-top: 90px;
+}
+
+.barbearia-text-paragrafo{
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    padding: 2%;
+    font-family: var(--fonte-secundaria);
+}
+
+.barbearia-img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn-barbearia{
+    display: flex;
+    justify-content: center;
+    margin-left: 80px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family:var(--fonte-secundaria) ;
+    color: var(--cor-tercearia);
+    border: 2px solid var(--cor-tercearia);
+    padding: 10px 16px;
+    width: 200px;
+    text-decoration: none;
+}
+
+.btn-barbearia:hover{
+    cursor: pointer;
+    animation: translateY 0.8s infinite alternate;
+
+}
+
+@keyframes translateY {
+    from{
+        transform: translateY(0) scale(1);
+    } 
+    to{
+        transform: translateY(-8px) scale(1.07);
+    }
+}
+
+@media  screen and (max-width:1200px) {
+    .barbearia{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
